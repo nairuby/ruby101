@@ -8,13 +8,6 @@ end
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
-# Github deployment
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'gh_pages'
-  deploy.build_before = true
-end
-
 # Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
