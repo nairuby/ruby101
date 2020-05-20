@@ -14,10 +14,10 @@ modules:
 </h1>
 <ol>
   <% current_page.data.modules.each do |f| %>
-    <li><%= link_to (f.to_s).capitalize, '/'+f.to_s+'.html' %></li>
+    <li><%= link_to (f.to_s).capitalize, '/ruby101/'+f.to_s+'.html' %></li>
   <% end %>
 </ol>
 
 <footer>
-  <%= link_to 'Home', '/index.html' %>
+  <%= link_to 'Home', '/ruby101/index.html' %>
 </footer>
