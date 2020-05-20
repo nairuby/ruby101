@@ -1,0 +1,23 @@
+---
+title: Welcome to Ruby 101
+modules:
+ - Introduction
+ - A Game with Gosu
+ - A Serverless Website
+ - Your Projects
+---
+
+  <title id="title">Ruby 101</title>
+
+<h1>
+  Ruby 101:  Projects
+</h1>
+<ol>
+  <% current_page.data.modules.each do |f| %>
+    <li><%= f %></li>
+  <% end %>
+</ol>
+<footer>
+  <%= link_to 'Home', '/index.html' %>
+</footer>
+
