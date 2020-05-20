@@ -33,7 +33,7 @@ git commit -am "Useful commit message"
 git push
 ```
 
-The website itsel is in the 
+The website itself is in the 
 [gh-pages](https://github.com/nairuby/ruby101/tree/gh-pages) branch.
 To push the updated website use
 ```
