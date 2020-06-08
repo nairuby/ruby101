@@ -1,0 +1,113 @@
+---
+title: Welcome to Ruby 101
+---
+
+  <title id="title">Ruby 101</title>
+
+<h1>
+  Ruby 101: Game
+</h1>
+<h2>
+  Tic Tac Toe
+</h2>
+
+<h3>
+  Introduction
+</h3>
+<p><%= link_to 'Tic Tac Toe','https://en.wikipedia.org/wiki/Tic-tac-toe'%>
+   is a game often played by young people. It is a solvable game and
+   a good exercise in programming. We will first consider this game
+   without a graphical user interface so that you can try it in the 
+   browser if you do not have Ruby installed. Tic Tac Toe is also known
+   as noughts and crosses. It has a 3 x 3 game board and two players.
+   The game starts with an empty board, and players put their pieces
+   on the board in turn. The objective of the game is to get 3 of ones 
+   pieces in a line, the first player to do so wins. If neither player
+   does so, then the game ends in a draw. An example game sequence is
+   below.</p>
+
+<h3>
+  Example Game
+</h3>
+<p>Game board</p>
+
+<pre>
+   |   |
+---|---|---
+   |   |  
+---|---|---
+   |   |  
+</pre>
+<p>Player X starts</p>
+<pre>
+ X |   |
+---|---|---
+   |   |
+---|---|---
+   |   |
+</pre>
+<p>Player O</p>
+<pre>
+ X |   |
+---|---|---
+   | O |
+---|---|---
+   |   |
+</pre>
+<p>Player X </p>
+<pre>
+ X |   |
+---|---|---
+   | O |
+---|---|---
+ X |   |
+</pre>
+<p>Player O </p>
+<pre>
+ X |   |
+---|---|---
+ O | O | 
+---|---|---
+ X |   |
+</pre>
+<p>Player X </p>
+<pre>
+ X |   |
+---|---|---
+ O | O | X
+---|---|---
+ X |   |
+</pre>
+<p>Player O</p>
+<pre>
+ X | O | 
+---|---|---
+ O | O | X
+---|---|---
+ X |   |
+</pre>
+<p>Player X</p>
+<pre>
+ X | O | 
+---|---|---
+ O | O | X
+---|---|---
+ X |   | X
+</pre>
+<p>Player O</p>
+<pre>
+ X | O | 
+---|---|---
+ O | O | X
+---|---|---
+ X | O | X
+</pre>
+<p><b>Player O wins!</b></p>
+<h3>
+  Example Ruby Programs
+</h3>
+<ul>
+  <li>
+    Some programs can be found <%= link_to 'here', 'https://gitlab.com/bkmgit/bao/' %>.
+  </li>
+  </ul>

@@ -1,0 +1,195 @@
+---
+title: Welcome to Ruby 101
+---
+
+  <title id="title">Ruby 101</title>
+
+<h1>
+  Ruby 101: Game
+</h1>
+<h2>
+  Bao
+</h2>
+
+<p> <%= link_to 'Bao', 'https://sw.wikipedia.org/wiki/Bao' %> is a board
+game from Africa, with many different variations. You can play it online
+<%= link_to 'here', 'https://www.kibao.org/' %>. A description of the rules
+can be found in the first link, as well as <%= link_to 'here', 'http://www.gamecabinet.com/rules/Bao.html' %>. As Bao is complicated,
+  we will consider a simpler version, 
+  <%= link_to 'Kalah', 'https://en.wikipedia.org/wiki/Kalah' %>, for the final 
+  session, we will discuss Bao and Bao la kujifunza.</p>
+
+<h3>
+  Kalah
+</h3>
+<p>We will consider the rules given <%= link_to 'here', 'https://naml.us/paper/irving2000_kalah.pdf' %>,
+where we have a board with 12 holes and 2 stores. Initially, there are 4 seeds in each hole.
+The game has two players who take turns to play. A turn for a player, consists of choosing
+one of the holes on their side of the board, picking all the seeds and then placing them in 
+subsequent holes, one by one in an anti-clockwise direction.</p>
+
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 4 | 4 | 4 | 4 | 4 | 4 | B |
+| 0 |---|---|---|---|---|---| 0 |
+|   | 4 | 4 | 4 | 4 | 4 | 4 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+<h4>
+Rules
+</h4>
+<ul>
+  <li>A turn for a player, consists of choosing one of the holes on 
+    their side of the board, picking all the seeds and then placing them in
+    subsequent holes, one by one in an anti-clockwise direction.</li>
+  <li>Players store is included in sowing, but opponents store is not.</li>
+  <li>If last grain ends up in the players store, player gets to play again.</li>
+  <li>If the last grain ends up in an empty hole on the players side, the player
+    takes all the grains in the opposite hole on the opponents side, and the players
+    last grain, and puts it in their store. The turn ends.</li>
+  <li>If the last grain is put anywhere else, the turn ends.</li>
+  <li>The game ends when one player has no grains on their side, at which point
+    all the grains on the other side are put in the store corresponding to 
+    that side.</li>
+  <li>The winner is the player with the most grains in their store at 
+    the end of the game.</li>
+</ul>
+<h4>
+Demonstration
+</h4>
+<p>A starts<p>
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 5 | 5 | 5 | 0 | 4 | 4 | B |
+| 1 |---|---|---|---|---|---| 0 |
+|   | 4 | 4 | 4 | 4 | 4 | 4 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+
+<p>A continues<p>
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 6 | 6 | 0 | 0 | 4 | 4 | B |
+| 2 |---|---|---|---|---|---| 0 |
+|   | 5 | 5 | 4 | 4 | 4 | 4 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+
+<p>B plays<p>
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 6 | 6 | 0 | 0 | 4 | 4 | B |
+| 2 |---|---|---|---|---|---| 1 |
+|   | 5 | 0 | 5 | 5 | 5 | 5 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+
+<p>B plays again<p>
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 6 | 6 | 0 | 0 | 4 | 4 | B |
+| 2 |---|---|---|---|---|---| 1 |
+|   | 0 | 1 | 6 | 6 | 6 | 6 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+
+<p>A plays<p>
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 7 | 7 | 1 | 1 | 0 | 4 | B |
+| 2 |---|---|---|---|---|---| 1 |
+|   | 0 | 1 | 6 | 6 | 6 | 6 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+
+<p>B plays</p>
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 7 | 7 | 1 | 1 | 1 | 5 | B |
+| 2 |---|---|---|---|---|---| 2 |
+|   | 0 | 1 | 0 | 7 | 7 | 7 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+
+<p>A plays</p>
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 8 | 8 | 2 | 2 | 2 | 0 | B |
+| 2 |---|---|---|---|---|---| 1 |
+|   | 0 | 1 | 6 | 6 | 6 | 6 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+
+
+<p>B plays</p>
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 8 | 8 | 2 | 2 | 2 | 0 | B |
+| 2 |---|---|---|---|---|---| 1 |
+|   | 0 | 0 | 7 | 6 | 6 | 6 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+
+<p>A plays and captures</p>
+<pre>
+          Mchezaji A
+|---|---|---|---|---|---|---|---|
+| A | 0 | 8 | 2 | 2 | 2 | 0 | B |
+|11 |---|---|---|---|---|---| 1 |
+|   | 1 | 1 | 8 | 7 | 7 | 0 |   |
+|---|---|---|---|---|---|---|---|
+          Mchezaji B
+</pre>
+<p>The game continues...</p>
+<h3>
+  Next
+</h3>
+<p>We now learn about Gosu so that
+we can implement this game.
+</p>
+
+<h3>
+  References
+</h3>
+<h4>
+  Online articles
+</h4>
+<ul>
+  <li> <%= link_to 'Wikipedia article on Bao', 'https://sw.wikipedia.org/wiki/Bao' %> </li>
+  <li> <%= link_to 'Kalah description', 'https://www.parentingscience.com/mancala-games.html' %> </li>
+  <li> <%= link_to 'Kalah description', 'https://rocketsnail.com/mancala/' %> </li>
+  <li> <%= link_to 'Kalah rules', 'https://www.wikihow.com/Play-Kalaha' %> </li>
+  <li> <%= link_to 'Play Kalah online', 'https://www.dr-mikes-math-games-for-kids.com/mancala.html' %> </li>
+  <li> <%= link_to 'Wikipedia Kalah description', 'https://en.wikipedia.org/wiki/Kalah' %> </li>
+  <li> <%= link_to 'Python implementation', 'https://github.com/learnleapfly/boardgame_bao_tutorial' %> </li>
+  <li> <%= link_to 'Bao description', 'http://gambiter.com/mancala/Bao_mancala_game.html' %> </li>
+  <li> <%= link_to 'Bao rules', 'http://www.gamecabinet.com/rules/Bao.html' %> </li>
+</ul>
+
+<h4>
+  Artificial Intelligence
+</h4>
+<ul>
+  <li> <%= link_to 'Artificial intelligence based Kalah player implementation', 'https://github.com/jasonwooCH/Kalah-AI' %> </li>
+  <li> <%= link_to 'Artificial intelligence Kalah implemetation', 'https://github.com/jglamine/kalah' %> </li>
+  <li> <%= link_to 'Artificial intelligence Kalah description', 'https://cpl.li/2018/kalah-ai/' %> </li>
+ <li> <%= link_to 'Artificial intelligence implementation and paper describing solution', 'https://github.com/girving/kalah' %> </li>
+</ul>
