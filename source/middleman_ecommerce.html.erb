@@ -1,0 +1,75 @@
+---
+title: Welcome to Ruby 101
+---
+
+  <title id="title">Ruby 101</title>
+
+<h1>
+  Ruby 101: Serverless E-commerce
+</h1>
+<h2>
+  E-commerce with Middleman
+</h2>
+
+<ul>
+  <li>It is possible to obtain free hosting for a static website. This can make for a 
+    cost effective shop. To preserve your brand it is helpful to obtain a domain name.
+    Domain names are rented, so if fees are not paid on a regular basis, someone else
+    can use the domain name. Domain names can be obtained from about 1,000/= per year. 
+    Some domain name registrars include:
+    <ul>
+      <li><%= link_to 'Alibaba','https://www.alibabacloud.com' %></li>
+      <li><%= link_to 'Freenom','https://www.freenom.com/' %></li>
+      <li><%= link_to 'Gandi','https://www.gandi.net/' %></li>
+      <li><%= link_to 'Hover','https://www.hover.com' %></li>
+      <li><%= link_to 'Kenya Web Experts','https://kenyawebexperts.com/' %></li>
+      <li><%= link_to 'Namecheap','https://www.namecheap.com' %></li>
+      <li><%= link_to 'True host','https://truehost.co.ke/' %></li>
+    </ul>
+    In addition to selling domain names, <%= link_to 'Freenom','https://www.freenom.com' %></li>  
+    also allows you to borrow a domain name for free, though only on certain top level domains.
+    </li>
+    <li>A static website on its own does not allow you to receive payments. To do so, a link to a
+      payment provider will be used.</li>
+  <li>An excellent tutorial on making an e-commerce shop with 
+    <%= link_to 'Middleman','https://middlemanapp.com/' %> has been provided by the payment provider
+    <%= link_to 'Snipcart','https://snipcart.com' %>, and is available 
+    <%= link_to 'here','https://snipcart.com/blog/static-site-e-commerce-integrating-snipcart-with-middleman' %>.
+    Snipcart is great, but at present has a minimum monthly fee of 1000 Kshs or 10 USD. For some E-commerce
+    activities this may be prohibitive.  The tutorial here will use 
+    <%= link_to 'Flutterwave','https://flutterwave.com/' %>, which has
+    no minimum monthly fee, but does keep a percentage of the transaction fee. Please examine their terms 
+    and conditions to determine if it is appropriate for your usecase. Using static websites for e-commerce
+    is new, and has been promoted by <%= link_to 'Jamstack','https://jamstack.org/' %> and associated 
+    serverless approaches to the web. As a result, many payment providers require you to use your own server, 
+    which is extremely helpful for more complicated e-commerce operations, but can also be more expensive to run,
+    if you do not need it.
+  </li>
+  <li>If you have used Middleman before, the steps should be comfortable and will follow the 
+    <%= link_to 'GitLab pages','https://docs.gitlab.com/ee/user/project/pages/' %> 
+    approach of forking a repository and customizing it. Some example
+    repositories are <%= link_to 'here','https://gitlab.com/pages' %>.
+    <ul>
+      <li>Fork the following <%= link_to 'repository','https://gitlab.com/bkmgit/middleman-flutterwave-duka' %></li>
+      <li>Create an account on <%= link_to 'Flutterwave','https://dashboard.flutterwave.com/signup'%></li>
+      <li>Use the <%= link_to 'test environment','https://support.flutterwave.com/en/articles/3632718-flutterwave-live-and-test-environments'%></li>
+      <li>Here we will use <%= link_to 'Rave inline','https://developer.flutterwave.com/docs/rave-inline' %>, where we will embed some extra code into our website.</li>
+      <li>Obtain an <%= link_to 'API key','https://support.flutterwave.com/en/articles/3632726-my-api-keys'%>, and set Rave to accept one time payments.</li>
+      <li>Insert the public API key into your code here.</li>
+      <li>To enable delivery of your item, the sample code uses a map, with components from 
+        <%= link_to 'OpenStreetMap','https://www.openstreetmap.org/'%> and
+        <%= link_to 'Leaflet','https://leafletjs.com/'%>. The map itself will be provided by
+        <%= link_to 'Mapbox', 'https://www.mapbox.com/' %>.</li>
+      <li>Therefore please setup a Mapbox account <%= link_to 'here','https://account.mapbox.com/auth/signup/' %></li>
+      <li>Mapbox allows you to download a fixed number of tiles for free. It also requires you to insert an 
+        <%= link_to 'Access token','https://docs.mapbox.com/help/how-mapbox-works/access-tokens/' %> into 
+        sites you wish to use Mapbox tiles on.</li>
+      <li>Obtain the URL address of your forked shop, and restrict your token to that URL as indicated
+        <%= link_to 'here','https://docs.mapbox.com/accounts/overview/tokens/#url-restrictions' %>.</li>
+      <li>Then put the access token here</li>
+      <li>Your demo shop should now be operational.</li>
+      <li>Consider changing the items by, using a different picture, and changing the pricing.</li>
+      <li>Consider implementing a pricing formula based on location and restricting deliveries to a certain region.</li>
+    </ul>
+</ul>
+

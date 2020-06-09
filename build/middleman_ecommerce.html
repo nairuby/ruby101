@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Welcome to Ruby 101</title>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body>
+    <header>
+   <img src="/ruby101/images/logo.png" alt="Logo" />
+</header>
+
+      <title id="title">Ruby 101</title>
+
+<h1>
+  Ruby 101: Serverless E-commerce
+</h1>
+<h2>
+  E-commerce with Middleman
+</h2>
+
+<ul>
+  <li>It is possible to obtain free hosting for a static website. This can make for a 
+    cost effective shop. To preserve your brand it is helpful to obtain a domain name.
+    Domain names are rented, so if fees are not paid on a regular basis, someone else
+    can use the domain name. Domain names can be obtained from about 1,000/= per year. 
+    Some domain name registrars include:
+    <ul>
+      <li><a href="https://truehost.co.ke/">True host</a></li>
+      <li><a href="https://kenyawebexperts.com/">Kenya Web Experts</a></li>
+      <li><a href="https://www.namecheap.com">Namecheap</a></li>
+      <li><a href="https://www.gandi.net/">Gandi</a></li>
+      <li><a href="https://www.hover.com">Hover</a></li>
+      <li><a href="https://www.freenom.com/">Freenom</a></li>
+    </ul>
+    In addition to selling domain names, <a href="https://www.freenom.com">Freenom</a></li>  
+    also allows you to borrow a domain name for free, though only on certain top level domains.
+    </li>
+    <li>A static website on its own does not allow you to receive payments. To do so, a link to a
+      payment provider will be used.</li>
+  <li>An excellent tutorial on making an e-commerce shop with 
+    <a href="https://middlemanapp.com/">Middleman</a> has been provided by the payment provider
+    <a href="https://snipcart.com">Snipcart</a>, and is available 
+    <a href="https://snipcart.com/blog/static-site-e-commerce-integrating-snipcart-with-middleman">here</a>.
+    Snipcart is great, but at present has a minimum monthly fee of 1000 Kshs or 10 USD. For some E-commerce
+    activities this may be prohibitive.  The tutorial here will use 
+    <a href="https://flutterwave.com/">Flutterwave</a>, which has
+    no minimum monthly fee, but does keep a percentage of the transaction fee. Please examine their terms 
+    and conditions to determine if it is appropriate for your usecase. Using static websites for e-commerce
+    is new, and has been promoted by <a href="https://jamstack.org/">Jamstack</a> and associated 
+    serverless approaches to the web. As a result, many payment providers require you to use your own server, 
+    which is extremely helpful for more complicated e-commerce operations, but can also be more expensive to run,
+    if you do not need it.
+  </li>
+  <li>If you have used Middleman before, the steps should be comfortable and will follow the 
+    <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab pages</a> 
+    approach of forking a repository and customizing it. Some example
+    repositories are <a href="https://gitlab.com/pages">here</a>.
+    <ul>
+      <li>Fork the following <a href="https://gitlab.com/bkmgit/middleman-flutterwave-duka">repository</a></li>
+      <li>Create an account on <a href="https://dashboard.flutterwave.com/signup">Flutterwave</a></li>
+      <li>Use the <a href="https://support.flutterwave.com/en/articles/3632718-flutterwave-live-and-test-environments">test environment</a></li>
+      <li>Here we will use <a href="https://developer.flutterwave.com/docs/rave-inline">Rave inline</a>, where we will embed some extra code into our website.</li>
+      <li>Obtain an <a href="https://support.flutterwave.com/en/articles/3632726-my-api-keys">API key</a>, and set Rave to accept one time payments.</li>
+      <li>Insert the public API key into your code here.</li>
+      <li>To enable delivery of your item, the sample code uses a map, with components from 
+        <a href="https://www.openstreetmap.org/">OpenStreetMap</a> and
+        <a href="https://leafletjs.com/">Leaflet</a>. The map itself will be provided by
+        <a href="https://www.mapbox.com/">Mapbox</a>.</li>
+      <li>Therefore please setup a Mapbox account <a href="https://account.mapbox.com/auth/signup/">here</a></li>
+      <li>Mapbox allows you to download a fixed number of tiles for free. It also requires you to insert an 
+        <a href="https://docs.mapbox.com/help/how-mapbox-works/access-tokens/">Access token</a> into 
+        sites you wish to use Mapbox tiles on.</li>
+      <li>Obtain the URL address of your forked shop, and restrict your token to that URL as indicated
+        <a href="https://docs.mapbox.com/accounts/overview/tokens/#url-restrictions">here</a>.</li>
+      <li>Then put the access token here</li>
+      <li>Your demo shop should now be operational.</li>
+      <li>Consider changing the items by, using a different picture, and changing the pricing.</li>
+      <li>Consider implementing a pricing formula based on location and restricting deliveries to a certain region.</li>
+    </ul>
+</ul>
+
+
+    <footer>
+  <a href="/ruby101/index.html">Home</a>
+  <a href="https://github.com/nairuby/ruby101">Tutorial source</a>
+  <a href="https://matrix.to/#/!pkDHsijldgvVJqvvvM:matrix.org?via=matrix.org">Chat</a>
+</footer>
+
+  </body>
+</html>
