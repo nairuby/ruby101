@@ -1,5 +1,10 @@
 ---
 title: Welcome to Ruby 101
+modules:
+ - testing
+ - send_email
+ - game_project
+ - serverless_project
 ---
 
   <title id="title">Ruby 101</title>
@@ -8,4 +13,13 @@ title: Welcome to Ruby 101
   Ruby 101:  Projects
 </h1>
 
+<p>In this session, we will review previous work, discuss improvements to
+it and discuss how you have extended or can extend it.
+</p>
+
+<ol>
+  <% current_page.data.modules.each do |f| %>
+    <li><%= link_to ((f.to_s).gsub("_"," ")).capitalize, '/ruby101/'+f.to_s+'.html' %></li>
+  <% end %>
+</ol>
 
